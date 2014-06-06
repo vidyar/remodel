@@ -1,9 +1,11 @@
 language: node_js
 node_js:
   - "0.8"
+  
 services:
   - rethinkdb
-
+notifications:
+ email: vidyac.raghav@gmail.com
 
 before_install:
   - git submodule update --init --recursive
