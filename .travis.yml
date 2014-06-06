@@ -4,6 +4,8 @@ node_js:
   
 services:
   - rethinkdb
+notifications:
+ email: vidyac.raghav@gmail.com
 
 
 before_install:
