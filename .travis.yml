@@ -6,7 +6,7 @@ node_js:
 services:
   - rethinkdb
 
-
+build_image: shippable/minv2
 before_install:
   - git submodule update --init --recursive
   - sudo apt-get install -qq software-properties-common
