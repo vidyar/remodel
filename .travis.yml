@@ -7,6 +7,7 @@ services:
   - rethinkdb
 
 build_image: shippable/minv2
+
 before_install:
   - git submodule update --init --recursive
   - sudo apt-get install -qq software-properties-common
@@ -15,3 +16,8 @@ before_install:
  # - sudo apt-get install rethinkdb
   #- sudo cp /etc/rethinkdb/default.conf.sample /etc/rethinkdb/instances.d/instance1.conf
   #- sudo /etc/init.d/rethinkdb restart
+
+archive: true
+
+notifications:
+  email: false
